@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 *.vsidx
+*.sqlite
+VSWorkspaceState.json
+
+
 # Distribution / packaging
 .Python
 build/
