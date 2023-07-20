@@ -5,7 +5,7 @@ __pycache__/
 
 # C extensions
 *.so
-*.vsix
+*.vsidx
 # Distribution / packaging
 .Python
 build/
