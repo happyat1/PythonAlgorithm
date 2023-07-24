@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3984d740-25c7-4365-8161-c713636257fa}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Easy\0001_TwoSum.py</StartupFile>
+    <StartupFile>Easy\0012_RomanToInteger.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,6 +22,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Easy\0001_TwoSum.py" />
+    <Compile Include="Easy\0012_RomanToInteger.py" />
     <Compile Include="PythonAlgorithm.py" />
   </ItemGroup>
   <ItemGroup>
