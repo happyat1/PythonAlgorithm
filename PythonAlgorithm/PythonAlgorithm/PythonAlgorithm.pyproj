@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3984d740-25c7-4365-8161-c713636257fa}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Easy\0012_RomanToInteger.py</StartupFile>
+    <StartupFile>Easy\0014_LongestCommonPrefix.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,7 +22,27 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Easy\0001_TwoSum.py" />
-    <Compile Include="Easy\0012_RomanToInteger.py" />
+    <Compile Include="Easy\0013_RomanToInteger.py" />
+    <Compile Include="Easy\0234_PalindromeLinkedList.py" />
+    <Compile Include="Easy\0283_MoveZeroes.py" />
+    <Compile Include="Easy\0543_DiameterOfBinaryTree.py" />
+    <Compile Include="Easy\0704_BinarySearch.py" />
+    <Compile Include="Easy\0226_InvertBinaryTree.py" />
+    <Compile Include="Easy\0169_MajorityElement.py" />
+    <Compile Include="Easy\0020_ValidParentheses.py" />
+    <Compile Include="Easy\0021_MergeTwoSortedLists.py" />
+    <Compile Include="Easy\0035_SearchInsertPosition.py" />
+    <Compile Include="Easy\0070_ClimbingStairs.py" />
+    <Compile Include="Easy\0094_BinaryTreeInorderTraversal.py" />
+    <Compile Include="Easy\0101_SymmetricTree.py" />
+    <Compile Include="Easy\0104_MaximumDepthOfBinaryTree.py" />
+    <Compile Include="Easy\0118_PascalsTriangle.py" />
+    <Compile Include="Easy\0121_BestTimeToBuyAndSellStock.py" />
+    <Compile Include="Easy\0136_SingleNumber.py" />
+    <Compile Include="Easy\0141_LinkedListCycle.py" />
+    <Compile Include="Easy\0160_IntersectionOfTwoLinkedLists.py" />
+    <Compile Include="Easy\0206_ReverseLinkedList.py" />
+    <Compile Include="Easy\0014_LongestCommonPrefix.py" />
     <Compile Include="PythonAlgorithm.py" />
   </ItemGroup>
   <ItemGroup>
