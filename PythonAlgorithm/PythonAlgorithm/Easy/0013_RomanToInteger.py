@@ -10,7 +10,7 @@ class Solution:
                 ans += value
             else :
                 ans -=value
-        ans += dict[s[len(s)-1]]
+        ans += dict[s[-1]]
         print (ans)
         return ans       
 
