@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3984d740-25c7-4365-8161-c713636257fa}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Easy\0020_ValidParentheses.py</StartupFile>
+    <StartupFile>Easy\0070_ClimbingStairs.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
