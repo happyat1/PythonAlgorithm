@@ -65,9 +65,7 @@ class Solution_Iteration:
                     stack.append(node2.right)
                     stack.append(node1.right)
                     stack.append(node2.left)
-
                 else: return False
-
             else: return False
         return True
 
