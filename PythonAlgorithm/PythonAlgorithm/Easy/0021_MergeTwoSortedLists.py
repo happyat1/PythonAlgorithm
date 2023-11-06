@@ -1,4 +1,5 @@
 
+from string import printable
 from typing import List
 from typing import Optional
 
@@ -17,8 +18,9 @@ class Solution:
             else: 
                 temp.next = list2
                 list2 = list2.next
+            print(temp.next.val)
             temp = temp.next
-        temp.next = list1 or list2  #5
+        temp.next = list1 or list2  #5        
         return dummy.next #6
 
 
@@ -27,11 +29,25 @@ class Solution:
 
 s =Solution()
 
+nodeTemp = ListNode(0)
+listNode1= ListNode(1)
+nodeTemp = listNode1;
+nodeTemp.next=ListNode(2)
+nodeTemp=nodeTemp.next;
+nodeTemp.next=ListNode(4)
+nodeTemp=nodeTemp.next;
+print(listNode1.val,listNode1.next.val, listNode1.next.next.val )
 
-listNode3 = ListNode(4)
-listNode2 = ListNode(4)
+nodeTemp = ListNode(0)
+listNode2= ListNode(1)
+nodeTemp = listNode2;
+nodeTemp.next=ListNode(3)
+nodeTemp=nodeTemp.next;
+nodeTemp.next=ListNode(4)
+nodeTemp=nodeTemp.next;
+print(listNode2.val,listNode2.next.val, listNode2.next.next.val)
 
 
+firstNode = s.mergeTwoLists(listNode1,listNode2)
 
-list_2 = [1,3,4]
-print (s.mergeTwoLists(list1,list2))
+print(firstNode.val,firstNode.next.val, firstNode.next.next.val,firstNode.next.next.next.val,firstNode.next.next.next.next.val)
