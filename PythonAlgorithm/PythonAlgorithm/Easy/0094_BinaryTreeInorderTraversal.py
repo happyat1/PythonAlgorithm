@@ -11,7 +11,7 @@ class TreeNode:
 
 class Solution:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        if root == None:
+        if root is None:
             return []
         res = []
         res += self.inorderTraversal(root.left)
@@ -27,22 +27,22 @@ root001.left = TreeNode(None)
 root001.right = TreeNode(2)
 root001.right.left = TreeNode(3)
 
-print("Solution_Recursion")
-s = Solution()
-print(s.inorderTraversal(root001))
+#print("Solution_Recursion")
+#s = Solution()
+#print(s.inorderTraversal(root001))
 
-# Input: root = []
-# Output: []
-root002 = TreeNode(None)
+## Input: root = []
+## Output: []
+#root002 = TreeNode(None)
 
-print(s.inorderTraversal(root002))
+#print(s.inorderTraversal(root002))
 
-# Input: root = [1]
-# Output: [1]
+## Input: root = [1]
+## Output: [1]
 
-root003 = TreeNode(1)
+#root003 = TreeNode(1)
 
-print(s.inorderTraversal(root003))
+#print(s.inorderTraversal(root003))
 
 # Iterative solution
 # Inorder Traversal using Stack:
@@ -69,7 +69,9 @@ class Solution_Iteration:
 
         while True:
             # Reach the left most Node of the current Node
+            
             if current is not None:
+                print(current.val)
                 # Place pointer to a tree node on the stack
                 # before traversing the node's left subtree
                 stack.append(current)
@@ -80,6 +82,7 @@ class Solution_Iteration:
             # at the top of the stack; however, if the stack is
             # empty you are done
             elif stack:
+                print("current is None")
                 current = stack.pop()
                 res.append(current.val)
 
@@ -96,6 +99,27 @@ class Solution_Iteration:
 print("\n\n\nSolution_Iteration")
 si = Solution_Iteration()
 
-print(si.inorderTraversal(root001))
-print(si.inorderTraversal(root002))
-print(si.inorderTraversal(root003))
+#print(si.inorderTraversal(root001))
+#print(si.inorderTraversal(root002))
+#print(si.inorderTraversal(root003))
+
+# Constructed binary tree is
+#             1
+#          /    \
+#         2      3
+#       /  \    /  \
+#      4    7  8    9
+#    /  \          /  \
+#   5    6        10    11 
+root = TreeNode(1)
+root.left = TreeNode(2)
+root.right = TreeNode(3)
+root.left.left = TreeNode(4)
+root.left.right = TreeNode(7)
+root.left.left.left = TreeNode(5)
+root.left.left.right = TreeNode(6)
+root.right.left = TreeNode(8)
+root.right.right = TreeNode(9)
+root.right.right.left  = TreeNode(10)
+root.right.right.right = TreeNode(11)
+print(si.inorderTraversal(root))

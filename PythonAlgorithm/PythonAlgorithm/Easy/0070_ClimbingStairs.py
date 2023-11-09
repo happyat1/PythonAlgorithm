@@ -13,7 +13,7 @@ class Solution:
 
   
 #Input: n=3
-#Output: 1
+#Output: 3
 
 s =Solution()
 n =1 #Output: 1
@@ -21,4 +21,8 @@ print (s.climbStairs(n))
 n =3 #Output: 3
 print (s.climbStairs(n))
 n =4 #Output: 5
+print (s.climbStairs(n))
+n =10 #Output: 89
+print (s.climbStairs(n))
+n =15 #Output: 987
 print (s.climbStairs(n))
