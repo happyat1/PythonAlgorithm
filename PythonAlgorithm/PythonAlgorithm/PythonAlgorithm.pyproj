@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3984d740-25c7-4365-8161-c713636257fa}</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>Easy\0021_MergeTwoSortedLists.py</StartupFile>
+    <StartupFile>Easy\0009_Palindrome Number.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,8 +21,11 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Easy\0009_Palindrome Number.py" />
     <Compile Include="Easy\0001_TwoSum.py" />
     <Compile Include="Easy\0013_RomanToInteger.py" />
+    <Compile Include="Easy\0102_Binary Tree Level Order Traversal.py" />
+    <Compile Include="Easy\0069_Sqrt%28x%29.py" />
     <Compile Include="Easy\0234_PalindromeLinkedList.py" />
     <Compile Include="Easy\0283_MoveZeroes.py" />
     <Compile Include="Easy\0543_DiameterOfBinaryTree.py" />

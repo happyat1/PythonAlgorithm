@@ -72,7 +72,37 @@ class Solution_Iteration:
    
         return height
 
+    def maxDepth_002(self, root):
+        if root is None:
+                return 0
+        res = 0
+        queue = []
+        queue.append(root)
+        nodesCount_level = 1
+        nodesCount_Nextlevel = 0
+
+        while queue:
+                node = queue.pop(0)
+                if node.left is not None:
+                    queue.append(node.left)
+                    nodesCount_Nextlevel += 1
+                if node.right is not None:
+                    queue.append(node.right)
+                    nodesCount_Nextlevel += 1
+
+                nodesCount_level -=1
+                if nodesCount_level == 0:
+                    res += 1
+                    nodesCount_level = nodesCount_Nextlevel
+                    nodesCount_Nextlevel =0
+
+        return res
+
 print("\n\n\nSolution_Iteration")
 s_iteration = Solution_Iteration()
 print(s_iteration.maxDepth(root001))
 print(s_iteration.maxDepth(root002))
+
+
+print(s_iteration.maxDepth_002(root001))
+print(s_iteration.maxDepth_002(root002))
