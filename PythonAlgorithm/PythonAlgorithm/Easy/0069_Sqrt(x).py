@@ -7,23 +7,23 @@ from typing import List
 #For example, do not use pow(x, 0.5) in c++ or x ** 0.5 in python.
 class Solution:
       def mySqrt(self, x: int) -> int:
-        left = 1
+        left = 0
         right = x
-        while True:           
-            half = (left+right)//2
-            if half * half == x : return half
-            elif half * half > x:
-                if  (half-1) * (half-1) <= x:
-                    return half -1
+        while left <= right:           
+            middle = (left+right)//2
+            if middle * middle == x : return middle
+            elif middle * middle > x:
+                if  (middle-1) * (middle-1) <= x:
+                    return middle -1
                 else:
-                    right = half -1
+                    right = middle -1
             else:
-                if  (half+1) * (half+1) > x:
-                    return half
-                elif (half+1) * (half+1) == x: 
-                    return half+1
+                if  (middle+1) * (middle+1) > x:
+                    return middle
+                elif (middle+1) * (middle+1) == x: 
+                    return middle+1
                 else:
-                    left = half +1     
+                    left = middle +1     
     
   
 #Input: x = 8

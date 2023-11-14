@@ -14,6 +14,22 @@ class Solution:
         print (ans)
         return ans       
 
+
+    def romanToInt_optimized(self, s: str) -> int:
+        ans = 0
+        n1 = dict [s[0]]
+        for i in range (len(s)-1):
+            next = dict[s[i+1]]
+            if n1 >= next:
+                ans += n1
+            else :
+                ans -=n1
+            n1 = next
+        ans += dict[s[-1]]
+        print (ans)
+        return ans      
+
+
 dict = {
         "I": 1,
         "V": 5,
@@ -31,3 +47,4 @@ dict = {
 inputStr = "MCMXCIV"
 s =Solution()
 s.romanToInt(inputStr)
+s.romanToInt_optimized(inputStr)

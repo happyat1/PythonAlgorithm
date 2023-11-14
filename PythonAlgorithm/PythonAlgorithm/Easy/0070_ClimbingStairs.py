@@ -11,6 +11,11 @@ class Solution:
 
         return prev_1 + prev_2
 
+
+    def climbStairs_recursion(self, n: int) -> int:
+       if n == 1: return 1
+       if n == 2: return 2
+       return self.climbStairs(n-1)+self.climbStairs(n-2)
   
 #Input: n=3
 #Output: 3
@@ -26,3 +31,4 @@ n =10 #Output: 89
 print (s.climbStairs(n))
 n =15 #Output: 987
 print (s.climbStairs(n))
+print (s.climbStairs_recursion(n))

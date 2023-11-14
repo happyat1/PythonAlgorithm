@@ -9,12 +9,13 @@ class Solution:
             for string in strs:                
                 if len(string)<=i or string[i] != char:
                     allMatched = False
+                    break
             if allMatched:
                 ans += char
             else:
                 break
-        print (ans)
         return ans
+
 
 #Input: strs = ["flower","flow","flight"]
 #Output: "fl"
@@ -26,7 +27,7 @@ class Solution:
 s =Solution()
 
 strs = ["flower","flow","flight"]
-s.longestCommonPrefix(strs)
+print(s.longestCommonPrefix(strs))
 
 strs = ["dog","racecar","car"]
-s.longestCommonPrefix(strs)
+print(s.longestCommonPrefix(strs))
