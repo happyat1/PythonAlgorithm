@@ -3,17 +3,17 @@ from typing import List
 
 class Solution:
     def isValid(self, s: str) -> bool:
-        dic = {'(':')' , '[':']' , '{':'}'}
-        res = []
+        dict = {'(':')' , '[':']' , '{':'}'}
+        stack = []
         for c in s :
-            if c in dic:
-                res.append(c)
+            if c in dict:
+                stack.append(c)
             else:
-                if len(res)>0 and c == dic[res[-1]]:
-                    del res[-1]
+                if len(stack)>0 and c == dict[stack[-1]]:
+                    del stack[-1]
                 else:
                     return False
-        return res == []
+        return stack == []
 
 #Input: strs = "{[()[]{}((([])))]}"
 #Output: True
