@@ -27,5 +27,12 @@ class Solution:
 
         return res
 
+
 s = Solution()
+#Input: 5
+#Output:last list [1, 4, 6, 4, 1]
+print(s.generate(10))
+
+#Input: 10
+#Output:last list [1, 9, 36, 84, 126, 126, 84, 36, 9, 1]]
 print(s.generate(10))
