@@ -25,14 +25,18 @@ class Solution:
     #Time complexity: O(N)    
     #Auxiliary Space: O(1)  
     def hasCycle_Floyd(self, head: Optional[ListNode]) -> bool:
-        slow = head.next.next
-        fast = head.next
-        while (fast is not None):
-            if fast == slow:
+        if head is None: return False
+        if head.next is None: return False
+        if head.next.next is None: return False
+        slow = head.next
+        fast = head.next.next
+        while fast:
+            if slow == fast:
                 return True
-            fast = fast.next.next
-            slow = slow.next
-
+            else:
+                slow = slow.next
+                if fast.next is None: return False 
+                fast = fast.next.next
         return False
 
 
