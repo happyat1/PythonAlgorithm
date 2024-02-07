@@ -1,3 +1,4 @@
+from ast import If
 from typing import Optional
 from typing import List
 
@@ -64,7 +65,9 @@ class Solution:
                  print ("candidate")
                  print (candidate.val)
 
-              if nodeA is nodeB: candidate = nodeA
+              if nodeA is nodeB: 
+                  if candidate is None:
+                     candidate = nodeA # only update candidate if the previous node is not candidate
               else: candidate = None
 
               if nodeA.next is not None: nodeA = nodeA.next
@@ -80,8 +83,7 @@ class Solution:
               else: break
               
         return candidate
-#Input: head = [3,2,0,-4], pos = 1
-#Output: true
+
 
 s =Solution()
 
