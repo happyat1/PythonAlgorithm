@@ -14,9 +14,11 @@ class Solution:
         if root is None:
             return []
         res = []
-        res += self.inorderTraversal(root.left)
+        res += self.inorderTraversal(root.left)  
+        # or res.extend(self.inorderTraversal(root.left))
         res.append(root.val)
         res += self.inorderTraversal(root.right)
+        # or res.extend(self.inorderTraversal(root.right))
         return res
 
 
@@ -60,7 +62,6 @@ root001.right.left = TreeNode(3)
 
 class Solution_Iteration:
     def inorderTraversal(self, root: Optional[TreeNode]) -> List[int]:
-        # Set current to root of binary tree
         # Set current to root of binary tree
         current = root
 

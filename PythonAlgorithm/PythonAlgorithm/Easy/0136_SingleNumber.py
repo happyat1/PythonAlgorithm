@@ -3,8 +3,8 @@ from typing import List
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
         res = nums[0]
-        for i in range (len(nums)-1):
-            res = res^nums[i+1]
+        for i in range (1,len(nums)):
+            res = res^nums[i]
 
         return res
 

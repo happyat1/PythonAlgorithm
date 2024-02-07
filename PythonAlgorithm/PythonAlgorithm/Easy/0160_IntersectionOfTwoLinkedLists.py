@@ -46,6 +46,40 @@ class Solution:
                 
         return None
 
+    def getIntersectionNode_02(self, headA: ListNode, headB: ListNode) -> Optional[ListNode]:
+        nodeA = headA
+        nodeB = headB
+        candidate = None
+        listAExtended = False
+        listBExtended = False
+        while True: 
+              print ("nodeA")
+              print (nodeA)
+              print (nodeA.val)
+              print ("nodeB")
+              print (nodeB)
+              print (nodeB.val)
+             
+              if candidate is not None:
+                 print ("candidate")
+                 print (candidate.val)
+
+              if nodeA is nodeB: candidate = nodeA
+              else: candidate = None
+
+              if nodeA.next is not None: nodeA = nodeA.next
+              elif nodeA.next is None and not listAExtended: 
+                  nodeA = headB
+                  listAExtended = True
+              else: break
+
+              if nodeB.next is not None: nodeB = nodeB.next
+              elif nodeB.next is None and not listBExtended: 
+                  nodeB = headA
+                  listBExtended = True
+              else: break
+              
+        return candidate
 #Input: head = [3,2,0,-4], pos = 1
 #Output: true
 
@@ -67,4 +101,5 @@ head2.next.next.next.next=ListNode(8)
 head2.next.next.next.next.next=ListNode(4)
 head2.next.next.next.next.next.next=ListNode(5)
 
-print(s.getIntersectionNode(head1,head2))
+#print(s.getIntersectionNode(head1,head2))
+print(s.getIntersectionNode_02(head1,head2))
