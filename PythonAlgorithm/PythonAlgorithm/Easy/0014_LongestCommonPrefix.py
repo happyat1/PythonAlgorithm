@@ -5,15 +5,10 @@ class Solution:
         ans = ""
         for i in range(len(strs[0])):
             char = strs[0][i]
-            allMatched = True
             for string in strs:                
-                if len(string)<=i or string[i] != char:
-                    allMatched = False
-                    break
-            if allMatched:
-                ans += char
-            else:
-                break
+                if len(string)< i+1 or string[i] != char:
+                   return ans
+            ans += char
         return ans
 
 

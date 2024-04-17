@@ -27,12 +27,7 @@ root002.right = TreeNode(2)
 class Solution(object):
     def maxDepth(self, root):
         if root is None: return 0
-        lL = self.maxDepth(root.left)
-        lR = self.maxDepth(root.right)
-        if lL > lR:
-            return lL+1
-        else:
-            return lR+1
+        return max(self.maxDepth(root.left),self.maxDepth(root.right))+1
     
 s = Solution()
 print(s.maxDepth(root001))

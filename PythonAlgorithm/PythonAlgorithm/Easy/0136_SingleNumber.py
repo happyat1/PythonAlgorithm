@@ -16,14 +16,14 @@ class Solution:
         n = len(nums)
 
         # Iterate through every bit
-        for i in range(0, INT_SIZE) :
+        for i in range(INT_SIZE) :
          
             # Find sum of set bits 
             # at ith position in all 
             # array elements
             sm = 0
             x = (1 << i)
-            for j in range(0, n) :
+            for j in range(n) :
                 if (nums[j] & x) :
                     sm = sm + 1
                  

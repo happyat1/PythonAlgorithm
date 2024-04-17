@@ -48,7 +48,8 @@ root001.right.left = TreeNode(3)
 
 # Iterative solution
 # Inorder Traversal using Stack:
-# As we already know, recursion can also be implemented using stack. Here also we can use a stack to perform inorder traversal of a Binary Tree. Below is the algorithm for traversing a binary tree using stack.
+# As we already know, recursion can also be implemented using stack. Here also we can use a stack to perform inorder traversal of a Binary Tree. 
+# Below is the algorithm for traversing a binary tree using stack.
 
 # Create an empty stack (say S).
 # Initialize the current node as root.
