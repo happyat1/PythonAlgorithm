@@ -8,7 +8,7 @@ class Solution:
             if  needed not in numSet:
                 numSet.add (nums[i])
             else:                
-                return {i, nums.index(needed)}
+                return [i, nums.index(needed)]
 
     def twoSum_dict(self, nums: List[int], target: int) -> List[int]:    
         dict = {}
@@ -17,7 +17,7 @@ class Solution:
             if  needed not in dict:
                 dict[nums[i]]=i
             else:                
-                return {i, dict[needed]}
+                return [i, dict[needed]]
             
 
 nums = [2,7,11,15]
